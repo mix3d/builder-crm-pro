@@ -177,7 +177,7 @@ export default function Step1() {
         </div>
 
         {/* Trial Notice */}
-        <div className="mb-8 rounded-lg border border-border bg-dashboard-accent-orange/10 p-4">
+        <div className="mb-8 rounded-lg border border-border bg-amber-50 p-4">
           <div className="flex items-center gap-3">
             <Clock className="h-5 w-5 text-amber-600" />
             <div>
