@@ -122,10 +122,10 @@ export default function Step2() {
     <OnboardingLayout currentStep={2}>
       <div className="p-8">
         <div className="mb-8">
-          <h2 className="mb-2 text-xl font-semibold text-dashboard-text-primary">
+          <h2 className="mb-2 text-xl font-semibold text-foreground">
             Tell us about yourself
           </h2>
-          <p className="text-sm text-dashboard-text-secondary">
+          <p className="text-sm text-muted-foreground">
             Help us personalize your Builder experience with some basic
             information.
           </p>
@@ -135,7 +135,7 @@ export default function Step2() {
           {/* Name and Email Row */}
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="fullName" className="text-dashboard-text-primary">
+              <Label htmlFor="fullName" className="text-foreground">
                 Full Name <span className="text-red-500">*</span>
               </Label>
               <Input
@@ -157,7 +157,7 @@ export default function Step2() {
             <div className="space-y-2">
               <Label
                 htmlFor="workEmail"
-                className="text-dashboard-text-primary"
+                className="text-foreground"
               >
                 Work Email <span className="text-red-500">*</span>
               </Label>
@@ -183,7 +183,7 @@ export default function Step2() {
             <div className="space-y-2">
               <Label
                 htmlFor="companyName"
-                className="text-dashboard-text-primary"
+                className="text-foreground"
               >
                 Company Name <span className="text-red-500">*</span>
               </Label>
@@ -206,7 +206,7 @@ export default function Step2() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="jobRole" className="text-dashboard-text-primary">
+              <Label htmlFor="jobRole" className="text-foreground">
                 Job Role <span className="text-red-500">*</span>
               </Label>
               <Select
@@ -236,7 +236,7 @@ export default function Step2() {
 
           {/* How did you hear about Builder */}
           <div className="space-y-4">
-            <Label className="text-base font-medium text-dashboard-text-primary">
+            <Label className="text-base font-medium text-foreground">
               How did you hear about Builder?
             </Label>
             <div className="grid gap-4 md:grid-cols-2">
@@ -249,7 +249,7 @@ export default function Step2() {
                   />
                   <Label
                     htmlFor={option.id}
-                    className="text-sm font-normal text-dashboard-text-primary"
+                    className="text-sm font-normal text-foreground"
                   >
                     {option.label}
                   </Label>
@@ -260,7 +260,7 @@ export default function Step2() {
 
           {/* Primary Goal */}
           <div className="space-y-4">
-            <Label className="text-base font-medium text-dashboard-text-primary">
+            <Label className="text-base font-medium text-foreground">
               What's your primary goal with Builder?
             </Label>
             <RadioGroup
@@ -278,11 +278,11 @@ export default function Step2() {
                   <div className="space-y-1">
                     <Label
                       htmlFor={goal.id}
-                      className="text-sm font-medium text-dashboard-text-primary"
+                      className="text-sm font-medium text-foreground"
                     >
                       {goal.title}
                     </Label>
-                    <p className="text-xs text-dashboard-text-secondary">
+                    <p className="text-xs text-muted-foreground">
                       {goal.description}
                     </p>
                   </div>
@@ -293,7 +293,7 @@ export default function Step2() {
         </div>
 
         {/* Navigation */}
-        <div className="mt-8 flex items-center justify-between border-t border-gray-700 pt-6">
+        <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
           <Button variant="outline" onClick={handleBack}>
             <ChevronLeft className="mr-2 h-4 w-4" />
             Back
