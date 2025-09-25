@@ -71,10 +71,7 @@ const Index = () => {
               >
                 About
               </a>
-              <Button
-                size="sm"
-                variant="outline"
-              >
+              <Button size="sm" variant="outline">
                 Sign In
               </Button>
               <Button
@@ -98,9 +95,7 @@ const Index = () => {
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Grow Your Business with
-              <span className="text-primary block">
-                Smart CRM Solutions
-              </span>
+              <span className="text-primary block">Smart CRM Solutions</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Streamline your sales process, nurture customer relationships, and
@@ -208,9 +203,7 @@ const Index = () => {
                 className="border border-border bg-card hover:shadow-lg transition-shadow"
               >
                 <CardHeader>
-                  <div
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
-                  >
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl text-foreground">
@@ -255,9 +248,7 @@ const Index = () => {
               },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div
-                  className="text-3xl md:text-4xl font-bold text-primary mb-2"
-                >
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   {stat.number}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>
@@ -307,9 +298,7 @@ const Index = () => {
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">
-                      {feature}
-                    </span>
+                    <span className="text-muted-foreground">{feature}</span>
                   </div>
                 ))}
                 <Button
@@ -329,9 +318,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-xl text-foreground">
-                  Pro
-                </CardTitle>
+                <CardTitle className="text-xl text-foreground">Pro</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Best for growing businesses
                 </CardDescription>
@@ -352,9 +339,7 @@ const Index = () => {
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">
-                      {feature}
-                    </span>
+                    <span className="text-muted-foreground">{feature}</span>
                   </div>
                 ))}
                 <Button
@@ -392,9 +377,7 @@ const Index = () => {
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">
-                      {feature}
-                    </span>
+                    <span className="text-muted-foreground">{feature}</span>
                   </div>
                 ))}
                 <Button
@@ -448,11 +431,7 @@ const Index = () => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="h-14 px-8 text-base"
-            >
+            <Button size="lg" variant="outline" className="h-14 px-8 text-base">
               Schedule Demo
             </Button>
           </div>
@@ -477,9 +456,7 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-4">
-                Product
-              </h3>
+              <h3 className="font-semibold text-foreground mb-4">Product</h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -516,9 +493,7 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-4">
-                Company
-              </h3>
+              <h3 className="font-semibold text-foreground mb-4">Company</h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -555,9 +530,7 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-4">
-                Support
-              </h3>
+              <h3 className="font-semibold text-foreground mb-4">Support</h3>
               <ul className="space-y-2">
                 <li>
                   <a

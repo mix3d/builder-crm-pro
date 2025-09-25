@@ -39,9 +39,7 @@ export default function OnboardingLayout({
               key={step}
               className={cn(
                 "h-1 flex-1 rounded-full",
-                step <= currentStep
-                  ? "bg-primary"
-                  : "bg-muted",
+                step <= currentStep ? "bg-primary" : "bg-muted",
               )}
             />
           ))}
