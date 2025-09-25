@@ -92,7 +92,7 @@ const Index = () => {
       <section className="pt-16 pb-[50px] bg-gradient-to-b from-accent to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Badge className="mb-6 bg-blue-50 text-blue-700 hover:bg-blue-100 border-blue-200">
+            <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
               <Star className="w-3 h-3 mr-1" />
               #1 CRM for Growing Businesses
             </Badge>
