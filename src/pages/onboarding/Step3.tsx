@@ -56,10 +56,10 @@ export default function Step3() {
     >
       <div className="p-8">
         <div className="mb-8">
-          <h2 className="mb-2 text-xl font-semibold text-dashboard-text-primary">
+          <h2 className="mb-2 text-xl font-semibold text-foreground">
             Almost done!
           </h2>
-          <p className="text-sm text-dashboard-text-secondary">
+          <p className="text-sm text-muted-foreground">
             Just a few final preferences to personalize your experience with
             Builder.
           </p>
@@ -68,7 +68,7 @@ export default function Step3() {
         <div className="space-y-8">
           {/* Communication Preferences */}
           <div className="space-y-4">
-            <Label className="text-base font-medium text-dashboard-text-primary">
+            <Label className="text-base font-medium text-foreground">
               Communication Preferences
             </Label>
 
@@ -84,11 +84,11 @@ export default function Step3() {
                 <div className="space-y-1">
                   <Label
                     htmlFor="emailNotifications"
-                    className="text-sm font-medium text-dashboard-text-primary"
+                    className="text-sm font-medium text-foreground"
                   >
                     Email notifications
                   </Label>
-                  <p className="text-xs text-dashboard-text-secondary">
+                  <p className="text-xs text-muted-foreground">
                     Receive important updates about your account and new
                     features
                   </p>
@@ -106,11 +106,11 @@ export default function Step3() {
                 <div className="space-y-1">
                   <Label
                     htmlFor="productUpdates"
-                    className="text-sm font-medium text-dashboard-text-primary"
+                    className="text-sm font-medium text-foreground"
                   >
                     Product updates and tips
                   </Label>
-                  <p className="text-xs text-dashboard-text-secondary">
+                  <p className="text-xs text-muted-foreground">
                     Get helpful tips and learn about new Builder features
                   </p>
                 </div>
@@ -136,40 +136,40 @@ export default function Step3() {
           </div>
 
           {/* Account Summary */}
-          <div className="rounded-md border border-gray-600 bg-gray-800 p-4">
-            <h3 className="mb-3 text-sm font-medium text-dashboard-text-primary">
+          <div className="rounded-md border border-gray-200 bg-gray-50 p-4">
+            <h3 className="mb-3 text-sm font-medium text-foreground">
               Account Summary
             </h3>
             <div className="space-y-2 text-xs">
               <div className="flex">
-                <span className="w-16 font-medium text-dashboard-text-secondary">
+                <span className="w-16 font-medium text-muted-foreground">
                   Name:
                 </span>
-                <span className="text-dashboard-text-secondary">
+                <span className="text-muted-foreground">
                   {data.fullName || "Not provided"}
                 </span>
               </div>
               <div className="flex">
-                <span className="w-16 font-medium text-dashboard-text-secondary">
+                <span className="w-16 font-medium text-muted-foreground">
                   Email:
                 </span>
-                <span className="text-dashboard-text-secondary">
+                <span className="text-muted-foreground">
                   {data.workEmail || "Not provided"}
                 </span>
               </div>
               <div className="flex">
-                <span className="w-16 font-medium text-dashboard-text-secondary">
+                <span className="w-16 font-medium text-muted-foreground">
                   Company:
                 </span>
-                <span className="text-dashboard-text-secondary">
+                <span className="text-muted-foreground">
                   {data.companyName || "Not provided"}
                 </span>
               </div>
               <div className="flex">
-                <span className="w-16 font-medium text-dashboard-text-secondary">
+                <span className="w-16 font-medium text-muted-foreground">
                   Role:
                 </span>
-                <span className="text-dashboard-text-secondary">
+                <span className="text-muted-foreground">
                   {data.jobRole || "Not provided"}
                 </span>
               </div>
@@ -178,7 +178,7 @@ export default function Step3() {
         </div>
 
         {/* Navigation */}
-        <div className="mt-8 flex items-center justify-between border-t border-gray-700 pt-6">
+        <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
           <Button
             variant="outline"
             onClick={handleBack}

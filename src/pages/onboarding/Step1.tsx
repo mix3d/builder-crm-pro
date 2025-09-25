@@ -76,10 +76,10 @@ export default function Step1() {
     <OnboardingLayout currentStep={1}>
       <div className="p-8">
         <div className="mb-8">
-          <h2 className="mb-2 text-xl font-semibold text-dashboard-text-primary">
+          <h2 className="mb-2 text-xl font-semibold text-foreground">
             Choose your plan
           </h2>
-          <p className="text-sm text-dashboard-text-muted">
+          <p className="text-sm text-muted-foreground">
             Select the perfect plan for your needs. You can always upgrade or
             downgrade later.
           </p>
@@ -87,14 +87,14 @@ export default function Step1() {
 
         {/* Billing Toggle */}
         <div className="mb-8 flex justify-center">
-          <div className="flex rounded-lg bg-dashboard-sidebar p-1">
+          <div className="flex rounded-lg bg-muted p-1">
             <button
               onClick={() => handleBillingCycleChange("monthly")}
               className={cn(
                 "rounded-md px-6 py-2 text-sm font-medium transition-colors",
                 data.billingCycle === "monthly"
-                  ? "bg-dashboard-card text-dashboard-text-primary shadow-sm"
-                  : "text-dashboard-text-muted hover:text-dashboard-text-primary",
+                  ? "bg-card text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground",
               )}
             >
               Monthly
@@ -104,12 +104,12 @@ export default function Step1() {
               className={cn(
                 "flex items-center gap-2 rounded-md px-6 py-2 text-sm font-medium transition-colors",
                 data.billingCycle === "yearly"
-                  ? "bg-dashboard-card text-dashboard-text-primary shadow-sm"
-                  : "text-dashboard-text-muted hover:text-dashboard-text-primary",
+                  ? "bg-card text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground",
               )}
             >
               Yearly
-              <span className="rounded-full bg-dashboard-accent-orange px-2 py-0.5 text-xs font-semibold text-dashboard-dark">
+              <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800">
                 Save 20%
               </span>
             </button>
@@ -122,41 +122,41 @@ export default function Step1() {
             <Card
               key={plan.id}
               className={cn(
-                "relative cursor-pointer border-2 p-6 transition-colors bg-dashboard-dark",
+                "relative cursor-pointer border-2 p-6 transition-colors bg-card",
                 data.selectedPlan === plan.id
-                  ? "border-dashboard-accent-teal bg-dashboard-accent-teal/10"
-                  : "border-dashboard-sidebar hover:border-dashboard-accent-teal/50",
+                  ? "border-primary bg-primary/10"
+                  : "border-border hover:border-primary/50",
               )}
               onClick={() => handlePlanSelect(plan.id)}
             >
               {plan.popular && (
                 <>
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-dashboard-accent-teal px-3 py-1 text-xs font-semibold text-dashboard-dark">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
                     Most Popular
                   </div>
                   {data.selectedPlan === plan.id && (
-                    <div className="absolute right-4 top-4 flex h-5 w-5 items-center justify-center rounded-full bg-dashboard-accent-teal">
-                      <Check className="h-3 w-3 text-dashboard-dark" />
+                    <div className="absolute right-4 top-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+                      <Check className="h-3 w-3 text-primary-foreground" />
                     </div>
                   )}
                 </>
               )}
 
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-dashboard-text-primary">
+                <h3 className="text-lg font-semibold text-foreground">
                   {plan.name}
                 </h3>
-                <p className="text-sm text-dashboard-text-muted">
+                <p className="text-sm text-muted-foreground">
                   {plan.description}
                 </p>
               </div>
 
               <div className="mb-6">
                 <div className="flex items-baseline">
-                  <span className="text-3xl font-bold text-dashboard-text-primary">
+                  <span className="text-3xl font-bold text-foreground">
                     ${plan.price}
                   </span>
-                  <span className="ml-1 text-sm text-dashboard-text-muted">
+                  <span className="ml-1 text-sm text-muted-foreground">
                     /month
                   </span>
                 </div>
@@ -165,8 +165,8 @@ export default function Step1() {
               <ul className="space-y-3">
                 {plan.features.map((feature, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-dashboard-accent-teal" />
-                    <span className="text-sm text-dashboard-text-secondary">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span className="text-sm text-muted-foreground">
                       {feature}
                     </span>
                   </li>
@@ -177,14 +177,14 @@ export default function Step1() {
         </div>
 
         {/* Trial Notice */}
-        <div className="mb-8 rounded-lg border border-dashboard-sidebar bg-dashboard-accent-orange/10 p-4">
+        <div className="mb-8 rounded-lg border border-border bg-amber-50 p-4">
           <div className="flex items-center gap-3">
-            <Clock className="h-5 w-5 text-dashboard-accent-orange" />
+            <Clock className="h-5 w-5 text-amber-600" />
             <div>
-              <h3 className="text-sm font-medium text-dashboard-text-primary">
+              <h3 className="text-sm font-medium text-foreground">
                 14-day free trial included
               </h3>
-              <p className="text-xs text-dashboard-text-muted">
+              <p className="text-xs text-muted-foreground">
                 No credit card required. Cancel anytime during your trial
                 period.
               </p>
@@ -193,18 +193,18 @@ export default function Step1() {
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center justify-between border-t border-dashboard-sidebar pt-6">
+        <div className="flex items-center justify-between border-t border-border pt-6">
           <Button
             variant="outline"
             onClick={handleBack}
-            className="border-dashboard-sidebar text-dashboard-text-muted hover:text-dashboard-text-primary hover:border-dashboard-accent-teal"
+            className="border-border text-muted-foreground hover:text-foreground hover:border-primary"
           >
             <ChevronLeft className="mr-2 h-4 w-4" />
             Back
           </Button>
           <Button
             onClick={handleContinue}
-            className="bg-dashboard-accent-teal text-dashboard-dark hover:!bg-dashboard-accent-teal/80"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
           >
             Continue
           </Button>
