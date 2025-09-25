@@ -73,7 +73,7 @@ const Index = () => {
               </a>
               <Button
                 size="sm"
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                variant="outline"
               >
                 Sign In
               </Button>
@@ -89,10 +89,10 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-16 pb-[50px] bg-background">
+      <section className="pt-16 pb-[50px] bg-gradient-to-b from-accent to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 border-amber-200">
+            <Badge className="mb-6 bg-blue-50 text-blue-700 hover:bg-blue-100 border-blue-200">
               <Star className="w-3 h-3 mr-1" />
               #1 CRM for Growing Businesses
             </Badge>
@@ -120,7 +120,8 @@ const Index = () => {
               </Button>
               <Button
                 size="lg"
-                className="h-14 px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90"
+                variant="outline"
+                className="h-14 px-8 text-base"
                 onClick={() => setShowScheduleDialog(true)}
               >
                 Schedule Demo
@@ -128,15 +129,15 @@ const Index = () => {
             </div>
             <div className="mt-8 flex items-center justify-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-primary" />
+                <CheckCircle className="w-4 h-4 text-green-600" />
                 14-day free trial
               </div>
               <div className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-primary" />
+                <CheckCircle className="w-4 h-4 text-green-600" />
                 No credit card required
               </div>
               <div className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-primary" />
+                <CheckCircle className="w-4 h-4 text-green-600" />
                 Cancel anytime
               </div>
             </div>
