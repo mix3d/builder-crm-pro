@@ -321,7 +321,7 @@ const Index = () => {
             </Card>
 
             {/* Pro Plan - Most Popular */}
-            <Card className="border-2 border-dashboard-accent-teal relative bg-card">
+            <Card className="border-2 border-primary relative bg-card">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                 <Badge className="bg-primary text-primary-foreground">
                   Most Popular
